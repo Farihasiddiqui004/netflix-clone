@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("./images/bg_image.png");
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.container {
+    min-height: 140vh;
+}
+
+.logo {
+    width: 150px;
+    fill: #e50914;
+    position: absolute;
+    top: 30px;
+    left: 115px;
+}
+
+form {
+    color: #fff;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: .3rem;
+    width: 450px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 60px;
+    margin-top: 6rem;
+}
+
+form h1 {
+    margin-bottom: 28px;
+}
+
+.form-group {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.form-group input {
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    border: none;
+    border-radius: .3rem;
+    outline: none;
+    color: #fff;
+    padding: 16px 20px 0;
+    font-size: 1rem;
+}
+
+.form-group label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: #8c8c8c;
+    pointer-events: none;
+    transition: 200ms ease-in-out transform,
+        200ms ease-in-out font-size;
+}
+
+.form-group input:focus~label,
+.form-group input:valid~label {
+    transform: translateY(-1.25rem);
+    font-size: .7rem;
+}
+
+form button {
+    width: 100%;
+    height: 48px;
+    font-size: 1rem;
+    background-color: #e50914;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: .3rem;
+    cursor: pointer;
+    margin: 24px 0 12px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.remember label {
+    font-size: .85rem;
+    color: #b3b3b3;
+}
+
+.remember a {
+    color: #b3b3b3;
+    font-size: .85rem;
+    text-decoration: none;
+}
+
+.remember a:hover {
+    text-decoration: underline;
+}
+
+.facebook-login {
+    margin-top: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.facebook-login img {
+    width: 20px;
+    aspect-ratio: 1;
+    margin-right: 10px;
+}
+
+.facebook-login a {
+    color: #737373;
+    font-size: .8rem;
+    text-decoration: none;
+}
+
+.signup {
+    margin-top: 16px;
+}
+
+.signup p {
+    color: #737373;
+}
+
+.signup p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.signup p a:hover {
+    text-decoration: underline;
+}
+
+.captcha {
+    font-size: .8rem;
+    color: #8c8c8c;
+    margin-top: 1.2rem;
+}
+
+.captcha a {
+    color: #0071eb;
+    text-decoration: none;
+}
+
+.captcha a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: -50vh;
+    width: 100%;
+    height: 260px;
+    background-color: rgba(0, 0, 0, .7);
+    padding: 30px 170px;
+}
+
+footer a {
+    color: #ffffffb3;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .top {
+    margin: 30px;
+    margin-left: -5px
+}
+
+#question {
+    text-decoration: none;
+}
+
+footer .links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .links a {
+    display: inline-block;
+    width: 250px;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+@media (max-width:740px) {
+
+
+    .logo {
+        padding: 20px;
+    }
+
+    #netflix-logo {
+        width: 140px;
+    }
+
+    .form-container {
+        width: 100%;
+        top: 43%;
+    }
+
+    .form-container .form-group {
+        margin: 25px 0 40px
+    }
+
+    footer .top {
+        max-width: 412px;
+    }
+}
+
+
+@media (max-width: 740px) {
+    .logo {
+        padding: 20px;
+    }
+
+
+    #netflix-logo {
+        width: 100px;
+    }
+
+    .form-container {
+        top: 40%;
+    }
+
+
+    .form-container .form-group {
+        margin: 20px 0;
+    }
+
+    footer .top {
+        max-width: 100%;
+    }
+}
